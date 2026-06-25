@@ -201,6 +201,13 @@ public class CombiningPublishersBase {
             this.metaData = metaData;
             this.payload = payload;
         }
+
+        @Override
+        public String toString() {
+            return "Message [metaData=" + metaData + ", payload=" + payload + "]";
+        }
+
+        
     }
 
     public static class Chassis {

@@ -43,7 +43,7 @@ public class c3_FilteringSequence extends FilteringSequenceBase {
         
         Flux<String> strings = mashed_data_service()
                 .filter(object -> object instanceof String)
-                .map(obj -> obj.toString());
+                .map(Object::toString);
 
 
         StepVerifier.create(strings)

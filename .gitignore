@@ -28,4 +28,5 @@ log/
 target/
 
 # VSCode
+.github
 .vscode
